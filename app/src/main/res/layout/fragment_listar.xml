@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.ListarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:id="@+id/list_view_filmes"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragmentCadast"
+            android:name="fragments.EditarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            tools:layout="@layout/fragment_editar"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_weight="0.98"></fragment>
+
+    </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

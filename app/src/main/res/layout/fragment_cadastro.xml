@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.CadastroFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/colorBackgroundFloating"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".CadastroFragment">
+
+
+            <TextView
+                android:id="@+id/txtBemVindo"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center_horizontal"
+                android:text="** Bem Vindo ao DR MOVIES ** \n\n CADASTRO DE FILME "
+                android:textColor="#00f" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtTituloFilme"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="Título: " />
+
+
+                <EditText
+                    android:id="@+id/edtTitulo"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:text="">
+
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtNomeDiretor"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="Diretor: " />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextViewNome"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:text="">
+
+                </AutoCompleteTextView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gênero(s):" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/cbAcao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ação" />
+
+                <CheckBox
+                    android:id="@+id/cbAventura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aventura" />
+
+                <CheckBox
+                    android:id="@+id/cbDrama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drama" />
+
+                <CheckBox
+                    android:id="@+id/cbSuspense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suspense" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/cbAnimacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Animação" />
+
+                <CheckBox
+                    android:id="@+id/cbTerror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terror" />
+
+                <CheckBox
+                    android:id="@+id/cbComedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comédia" />
+
+                <CheckBox
+                    android:id="@+id/cbFiccao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ficção" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ator/Atriz: " />
+
+                <EditText
+                    android:id="@+id/edtAtores"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:text=""></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Informe o Nome do Personagem: " />
+
+            <EditText
+                android:id="@+id/edtPersonagem"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/txtPais"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="País:" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Informe o Ano de Lançamento: " />
+
+            <EditText
+                android:id="@+id/edtAnoLanc"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btCadastarFilme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CADASTRAR" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
